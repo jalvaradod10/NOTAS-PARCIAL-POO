@@ -1,15 +1,19 @@
 # NOTAS-PARCIAL-POO
 __Notación UML rápida (cheat-sheet, 1 línea cada uno)__
 
-Asociación (navegable): A ---> B (línea con flecha si es unidireccional).
+Breve cheat-sheet de notación que debes usar en el parcial:
 
-Asociación simple (bidireccional): A -- B (línea).
+Asociación simple (bidireccional): A -- B
 
-Agregación (relación “tiene”, independencia de ciclo de vida): A o-- B (rombo abierto en A).
+Asociación unidireccional: A ---> B (flecha en B si A conoce a B)
 
-Composición (parte inseparable — ciclo de vida ligado): A ◆-- B (rombo relleno en A).
+Agregación (rombo abierto): A o-- B → A “contiene” B, B puede existir independiente.
+
+Composición (rombo relleno): A ◆-- B → B no existe sin A (ciclo de vida ligado).
 
 Herencia / generalización: Sub △-- Super (triángulo en Super).
+
+Multiplicidad: 1, 0..1, 0..*, 1..*.
 
 __7. ESTRATEGIA PASO A PASO PARA RESOLVER UN ENUNCIADO EN EL PARCIAL__
 
@@ -106,6 +110,7 @@ acceso a la información)
 b. Implemente el/los método/s que permita/n obtener cuál es el producto que
 más se vende en una ciudad/población específica. Asuma que métodos get y
 set de los atributos ya existen, y que clases como Date ya existen en el sistema
+
 __1. ¿Qué significa por ej: paciente: Paciente dentro de Cita?__
 
 Esto es un atributo cuyo tipo no es un dato primitivo (int, string, bool...) sino otra clase.
